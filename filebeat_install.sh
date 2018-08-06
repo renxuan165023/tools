@@ -24,11 +24,11 @@ filebeat.inputs:
 
 output.elasticsearch:
   hosts: ["https://10.1.48.7:9200"]
-  index: "filebeat-da-dbk-%{+yyyy.MM.dd}"
+  index: "filebeat-da-aqu-%{+yyyy.MM.dd}"
   username: "logstash"
   password: "logstash"
   ssl.verification_mode: none
 
-setup.template.name: "filebeat-da-dbk"
-setup.template.pattern: "filebeat-da-dbk-*"
+setup.template.name: "filebeat-da-aqu"
+setup.template.pattern: "filebeat-da-aqu-*"
 EOF
